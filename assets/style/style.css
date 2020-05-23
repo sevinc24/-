@@ -1,0 +1,738 @@
+/*------------------------------------------------------------Home page-------------------------------------------------------*/
+/*-----------Preloader--------*/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.loader_bg {
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader_bg .loader {
+  border: 0 solid transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50vh - 75px);
+  left: calc(50vw - 75px);
+}
+
+.loader_bg .loader::before, .loader_bg .loader::after {
+  content: '';
+  border: 1em solid #60c724;
+  border-radius: 50%;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: loader 2s linear infinite;
+          animation: loader 2s linear infinite;
+  opacity: 0;
+}
+
+.loader::before {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+header {
+  background-color: #60c724;
+  height: 40px;
+  width: 100%;
+}
+
+/*---------------------Navigation-start------------------*/
+.my-nav {
+  padding: 50px 0;
+}
+
+.my-nav .logo img {
+  width: 100%;
+  height: 60px;
+}
+
+.my-nav .my-list-menu ul li {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Alegreya", serif;
+  margin-right: 15px;
+}
+
+.my-nav .my-list-menu ul li a {
+  color: black !important;
+  padding: 15px 19px;
+}
+
+.bottom-hover-effect::after {
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #60c724;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.bottom-hover-effect:hover a {
+  color: #fff !important;
+}
+
+.bottom-hover-effect:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+/*---------------------Navigation-end--------------------*/
+/*----------------------Slider-start---------------------*/
+.slider-price .carousel-item img {
+  width: 100% !important;
+}
+
+/*----------------------Slider-end-----------------------*/
+/*--------------------Online-order-start-----------------*/
+.online-order-price {
+  padding: 60px 0;
+}
+
+.online-order-price div h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Alegreya", serif;
+}
+
+.online-order-price div h5 {
+  text-transform: uppercase;
+  font-family: "Alegreya", serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/*--------------------Online-order-end-------------------*/
+/*----------- For experienced drivers-start -------------*/
+.background-img {
+  background: url("../../image/cars.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.background-img .center-price {
+  padding-top: 70px;
+}
+
+.background-img .center-price .stars {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.background-img .center-price .stars .one {
+  font-size: 30px;
+  color: #fff;
+  padding: 5px;
+}
+
+.background-img .center-price .stars .one:hover {
+  color: #60c724;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.background-img .center-price .stars .two {
+  font-size: 40px;
+  color: #fff;
+  padding: 5px;
+}
+
+.background-img .center-price .stars .two:hover {
+  color: #60c724;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.background-img .center-price .stars .three {
+  font-size: 50px;
+  color: #fff;
+  padding: 5px;
+}
+
+.background-img .center-price .stars .three:hover {
+  color: #60c724;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.background-img .center-price .center {
+  padding: 0 !important;
+}
+
+.background-img .center-price .center h2 {
+  font-family: "Alegreya", serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #60c724;
+  font-weight: 600;
+}
+
+.background-img .center-price .center h2 span {
+  font-family: "Alegreya", serif;
+  font-size: 30px;
+  font-weight: 400 !important;
+}
+
+.cs_main_row {
+  margin-top: 280px;
+}
+
+.cs_main_row .cs_main_white {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cs_main_row .cs_main_white .prices .left i {
+  padding-left: 33px;
+  color: green;
+  font-size: 50px;
+  padding-right: 0;
+}
+
+.cs_main_row .cs_main_white .prices .right p {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: "Alegreya", serif;
+}
+
+.cs_main_row .cs_main_white .prices .right p b {
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+/*----------- For experienced drivers-end --------------*/
+/*-------------- Question-price start ------------------*/
+.cs_green_row {
+  background: #00e34c;
+  background: -webkit-gradient(linear, left top, right top, from(#1d8b38), color-stop(100%, #1bdd4c), to(#008ee3));
+  background: linear-gradient(90deg, #1d8b38 0%, #1bdd4c 100%, #008ee3 100%);
+  color: #fff;
+  margin: 0px 30px;
+  margin-top: 120px;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.cs_green_row .left-word {
+  padding-left: 35px !important;
+}
+
+.cs_green_row .left-word p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Alegreya", serif;
+  padding: 25px;
+}
+
+.cs_green_row .left-word p span {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Alegreya", serif;
+  font-weight: 100 !important;
+}
+
+.cs_green_row .right-img img {
+  padding-top: 14px;
+  width: 100%;
+  max-height: 91px;
+}
+
+/*-------------- Question-price end -------------------*/
+/*-------------------Our Clients-start-----------------*/
+.wrapper {
+  padding-top: 100px;
+}
+
+.wrapper h2 {
+  color: #60c724;
+  text-transform: uppercase;
+  font-family: "Alegreya", serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wrapper .section-padding {
+  padding: 20px 0;
+}
+
+.wrapper .center {
+  text-align: center;
+  padding: 30px;
+}
+
+.wrapper .center img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper .center p {
+  font-size: 20px;
+  font-family: "Alegreya", serif;
+  padding-top: 10px;
+}
+
+.wrapper .center p span {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Alegreya", serif;
+}
+
+/*-------------------Our Clients-end------------------*/
+/*-------------------Footer-start---------------------*/
+.footer-menu-section-one li {
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  font-family: "Alegreya", serif;
+}
+
+.footer-menu-section-one li a {
+  color: #948d8d !important;
+  padding: 30px 15px !important;
+}
+
+.footer-menu-section-two {
+  padding-top: 17px;
+}
+
+.footer-menu-section-two div {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-menu-section-two .footer-word {
+  margin-top: 20px;
+}
+
+.footer-menu-section-two .footer-word h4 span {
+  font-family: "Alegreya", serif;
+  color: #948d8d;
+}
+
+.footer-menu-section-two .footer-word p span {
+  font-family: "Alegreya", serif;
+  color: #948d8d;
+}
+
+.footer-menu-section-three div img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-menu-section-three div p span {
+  font-family: "Alegreya", serif;
+  color: #948d8d;
+  font-size: 20px;
+}
+
+/*-------------------Footer-end---------------------*/
+@media (max-width: 568px) {
+  .my-nav {
+    text-align: center;
+  }
+  .my-nav .logo {
+    padding-left: 72px;
+  }
+  .my-nav .logo img {
+    width: 79% !important;
+    height: 45px !important;
+    padding-left: 0 !important;
+  }
+  .cs_main_row {
+    margin-top: 92px !important;
+  }
+  .cs_main_row .cs_main_white .prices .left i {
+    padding-left: 1px !important;
+    font-size: 18px !important;
+  }
+  .cs_main_row .cs_main_white .prices .right {
+    padding-left: 5px !important;
+  }
+  .cs_main_row .cs_main_white .prices .right p {
+    font-size: 10px !important;
+  }
+  .cs_main_row .cs_main_white .prices .right p b {
+    font-size: 8px !important;
+  }
+  .cs_green_row .for-responsive {
+    padding-left: 0 !important;
+  }
+  .cs_green_row .right-img {
+    padding-top: 0 !important;
+  }
+  .cs_green_row .right-img img {
+    height: 35px !important;
+    width: 40px !important;
+  }
+  .my-list-menu {
+    text-align: center !important;
+  }
+  .background-img {
+    height: 300px !important;
+  }
+  .background-img .center-price {
+    padding-top: 20px !important;
+  }
+  .background-img .center-price .center h2 {
+    font-size: 15px !important;
+  }
+  .background-img .center-price .center h2 span {
+    font-size: 12px !important;
+  }
+  .background-img .center-price .stars .one i {
+    font-size: 25px !important;
+  }
+  .background-img .center-price .stars .two i {
+    font-size: 25px !important;
+  }
+  .background-img .center-price .stars .three i {
+    font-size: 25px !important;
+  }
+  .background-img .center-price .for-none {
+    display: none !important;
+  }
+  .online-order-price {
+    padding: 20px 0;
+  }
+  .online-order-price div img {
+    width: 55px;
+  }
+  .online-order-price div h3 {
+    font-size: 12px;
+  }
+  .online-order-price div h5 {
+    font-size: 9px;
+  }
+  .footer-menu-section-one li a {
+    font-size: 15px !important;
+  }
+  .footer-menu-section-two {
+    text-align: center !important;
+  }
+  .footer-menu-section-two div a img {
+    width: 40% !important;
+    height: 30px !important;
+  }
+  .footer-menu-section-two .footer-word h4 {
+    font-size: 16px !important;
+  }
+  .footer-menu-section-two .footer-word p {
+    font-size: 14px !important;
+  }
+  .footer-menu-section-three {
+    text-align: center;
+  }
+  .footer-menu-section-three div {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .footer-menu-section-three div a img {
+    width: 79% !important;
+    height: 34px !important;
+  }
+  .footer-menu-section-three div p span {
+    font-size: 17px !important;
+  }
+  .for-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper {
+    padding-top: 70px;
+  }
+  .wrapper .center p {
+    padding-left: 25px;
+  }
+  .wrapper h2 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-nav {
+    text-align: center !important;
+  }
+  .my-nav .logo {
+    padding-left: 70px !important;
+  }
+  .background-img .center-price {
+    padding-top: 70px !important;
+  }
+  .background-img .center-price .stars .one {
+    font-size: 17px !important;
+  }
+  .background-img .center-price .stars .two {
+    font-size: 23px !important;
+  }
+  .background-img .center-price .stars .three {
+    font-size: 29px !important;
+  }
+  .background-img .center-price .center h2 {
+    font-size: 21px !important;
+  }
+  .background-img .center-price .center h2 span {
+    font-size: 18px !important;
+  }
+  .online-order-price div h3 {
+    font-size: 18px !important;
+  }
+  .online-order-price div h5 {
+    font-size: 13px !important;
+  }
+  .cs_main_row .cs_main_white .prices .left {
+    padding: 0 !important;
+  }
+  .cs_main_row .cs_main_white .prices .left i {
+    font-size: 35px !important;
+    padding-left: 15px !important;
+  }
+  .cs_main_row .cs_main_white .prices .right {
+    padding-left: 5px !important;
+  }
+  .cs_main_row .cs_main_white .prices .right p {
+    font-size: 12px !important;
+  }
+  .cs_main_row .cs_main_white .prices .right p b {
+    font-size: 9px !important;
+  }
+  .cs_green_row .left-word {
+    padding: 0 !important;
+  }
+  .cs_green_row .left-word p {
+    font-size: 11px !important;
+  }
+  .cs_green_row .right-img img {
+    margin-top: 5px !important;
+  }
+  .wrapper .center {
+    padding: 0;
+  }
+  .wrapper .center p {
+    margin-right: 40px !important;
+  }
+  .footer-menu-section-one li a {
+    font-size: 9px !important;
+  }
+  .footer-menu-section-two div a img {
+    width: 47% !important;
+    height: 33px !important;
+  }
+  .footer-menu-section-two .footer-word h4 {
+    font-size: 20px;
+  }
+  .footer-menu-section-two .footer-word p {
+    font-size: 16px;
+  }
+  .footer-menu-section-three div a img {
+    width: 100% !important;
+    height: 40px !important;
+  }
+  .footer-menu-section-three div p span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cs_main_white .prices .left {
+    padding: 0 !important;
+  }
+  .cs_main_white .prices .left i {
+    padding-left: 15px !important;
+  }
+  .cs_main_white .prices .right {
+    padding-left: 5px !important;
+  }
+  .cs_main_white .prices .right p {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .my-nav .logo img {
+    height: 39px;
+    padding-left: 28px;
+  }
+  .center-price {
+    padding-top: 42px !important;
+  }
+  .center-price .center {
+    padding: 0px !important;
+  }
+  .center-price .center h2 {
+    font-size: 30px !important;
+  }
+  .center-price .center h2 span {
+    font-size: 22px !important;
+  }
+  .cs_main_row {
+    margin-top: 340px;
+  }
+  .cs_main_row .cs_main_white {
+    padding: 20px;
+  }
+  .cs_main_row .cs_main_white .prices .left i {
+    font-size: 45px;
+    padding-left: 15px !important;
+  }
+  .cs_main_row .cs_main_white .prices .right {
+    padding-left: 12px !important;
+  }
+  .cs_main_row .cs_main_white .prices .right p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .cs_main_row .cs_main_white .prices .right p b {
+    font-size: 14px;
+  }
+  .cs_green_row .left-word {
+    padding-top: 17px !important;
+    padding-left: 30px !important;
+  }
+  .cs_green_row .left-word p {
+    font-size: 18px;
+    padding: 0 !important;
+  }
+  .cs_green_row .right-img {
+    padding-top: 10px !important;
+  }
+  .cs_green_row .right-img img {
+    padding: 0 !important;
+  }
+  .footer-menu-section-one li a {
+    font-size: 14px;
+    padding-top: 32px;
+  }
+  .footer-menu-section-two div a img {
+    width: 47% !important;
+    height: 33px !important;
+  }
+  .footer-menu-section-two .footer-word h4 {
+    font-size: 20px;
+  }
+  .footer-menu-section-two .footer-word p {
+    font-size: 16px;
+  }
+  .footer-menu-section-three div a img {
+    width: 100% !important;
+    height: 40px !important;
+  }
+  .footer-menu-section-three div p span {
+    font-size: 17px;
+  }
+  .wrapper h2 {
+    font-size: 24px !important;
+  }
+  .wrapper .center {
+    padding: 16px !important;
+  }
+}
+
+/*------------------------------------------------------------Table page-------------------------------------------------------*/
+.mytable-body tr .first {
+  width: 50%;
+  font-family: "Alegreya", serif;
+}
+
+.mytable-body tr .diff-color {
+  color: red;
+  font-weight: bold;
+}
+
+.mytable-body tr .second {
+  width: 25%;
+  font-family: "Alegreya", serif;
+}
+
+.mytable-body tr .second form select {
+  width: 100% !important;
+  border: none !important;
+  background-color: transparent;
+}
+
+.mytable-body .color-yellow {
+  background-color: #f5f523 !important;
+  color: #f73434;
+}
+
+.mytable-body .none form {
+  display: none !important;
+}
+
+.mytable-body .third {
+  width: 25%;
+  text-align: center;
+  font-family: "Alegreya", serif;
+}
+/*# sourceMappingURL=style.css.map */
